@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-javatest
+  namespace: appstudio
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: env
+          value: development
+        image: quay.io/karthik_jk/devfile-javatest@sha256:1f75050d767f12c68dda34502d4fdbbb9383966da4a1e2ee3943ee2ed1748fa1
+        name: container-image
+        resources: {}
+status: {}
