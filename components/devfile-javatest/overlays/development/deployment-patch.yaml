@@ -16,7 +16,7 @@ spec:
       - env:
         - name: env
           value: development
-        image: quay.io/karthik_jk/devfile-javatest@sha256:1f75050d767f12c68dda34502d4fdbbb9383966da4a1e2ee3943ee2ed1748fa1
+        image: quay.io/karthik_jk/devfile-javatest
         name: container-image
         resources: {}
 status: {}
